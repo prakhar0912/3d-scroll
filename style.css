@@ -19,10 +19,68 @@ body{
     width: 100vw;
     position: absolute;
     transform-style: preserve-3d;
-    will-change: transform; 
- 
+    will-change: transform;
+}
+
+
+/* Za Waarudo: start */
+
+
+
+.prakhar1{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    font-family: sans-serif;
+    font-size: 3rem;
+    z-index: 99999;
+}
+.prakhar2{
+    position: absolute;
+    top: 9%;
+    left: 0;
+    font-family: sans-serif;
+    font-size: 3rem;
+    transform: rotate(90deg);
+    z-index: 99999;
+}
+.gokul1{
+    position: absolute;
+    bottom: 9%;
+    left: 0%;
+    font-family: sans-serif;
+    font-size: 3rem;
+    transform: rotate(90deg);
+    z-index: 99999;
+}
+.gokul2{
+    position: absolute;
+    bottom: 1%;
+    left: 2%;
+    font-family: sans-serif;
+    font-size: 3rem;
+    z-index: 99999;
     
 }
+.next{
+    position: absolute;
+    bottom: 1%;
+    right: 2%;
+    font-family: sans-serif;
+    font-size: 3rem;
+    z-index: 99999;
+    
+}
+.prev{
+    position: absolute;
+    bottom: 9%;
+    right: 0%;
+    font-family: sans-serif;
+    font-size: 3rem;
+    transform: rotate(90deg);
+    z-index: 99999;
+}
+/* Za waarudo: end */
 .one{
     position: absolute;
     color: black;
@@ -38,8 +96,9 @@ body{
     position: absolute;
     top: 50vh;
     left: 50vw;
-    height: 20vh;
-    transform: translate3d(-50%,-50%,1700px) rotateY(20deg) rotateX(50deg);
+    height: 40%;
+    width: 30vw;
+    transform: translate3d(-50%,-50%,1700px) rotateY(10deg) rotateX(40deg);
 
 
 }
@@ -56,12 +115,18 @@ body{
     position: absolute;
     top: 50vh;
     left: 50vw;
-    height: 20vh;
-    transform: translate3d(-50%,-50%,20px) rotateY(-20deg) rotateX(50deg);
-
-}
-.box img{
     height: 40%;
     width: 30vw;
-    
+    transform: translate3d(-50%,-50%,500px) rotateY(-20deg) rotateX(50deg);
+
 }
+.five{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    /* top: 50vh;
+    left: 50vw; */
+    background:white; 
+    transform: translate3d(0,0,0px);
+}
+
