@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    transform-style: preserve-3d;
+    will-change: transform;
+    perspective: 3000px;
+    overflow: hidden;
+
+}
+.box{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    transform-style: preserve-3d;
+    will-change: transform;
+/*  transform: translateZ(0px); */
+    
+}
+.one{
+    position: absolute;
+    color: black;
+    font-family: sans-serif;
+    font-size: 4rem;
+    top: 50vh;
+    left: 50vw;
+    transform: translate3d(-50%,-50%,2500px);
+
+
+}
+.two{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    height: 20vh;
+    transform: translate3d(-50%,-50%,1700px) rotateY(20deg) rotateX(50deg);
+
+
+}
+.three{
+    position: absolute;
+    color: black;
+    font-family: sans-serif;
+    font-size: 4rem;
+    top: 50vh;
+    left: 50vw;
+    transform: translate3d(-50%,-50%,1000px);
+}
+.four{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    height: 20vh;
+    transform: translate3d(-50%,-50%,20px) rotateY(-20deg) rotateX(50deg);
+
+}
+.box img{
+    height: 40%;
+    width: 30vw;
+    
+}
