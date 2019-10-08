@@ -19,8 +19,8 @@ body{
     width: 100vw;
     position: absolute;
     transform-style: preserve-3d;
-    will-change: transform;
-/*  transform: translateZ(0px); */
+    will-change: transform; 
+ 
     
 }
 .one{
