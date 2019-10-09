@@ -5,6 +5,7 @@ const five = document.querySelector('.five');
 const next = document.querySelector('.next');
 const prev = document.querySelector('.prev');
 const audio = document.querySelector('audio');
+const easter = document.querySelector('.egg');
 
 
 const arr = ['Space','Space <br> <br><span id="subtitle" style="font-size:0.3rem;font-style:italic; ">The New Frontier<span>','0&ay','ok☺️y','oka9'];
@@ -15,8 +16,9 @@ TweenLite.fromTo(".one", 1, {
 },{
     transform: "translate3d(-50%,-50%,2500px)"  
 });
-audio.pause();
 
+
+audio.pause();
 
 
 
@@ -44,9 +46,13 @@ addEventListener('mousewheel', (e)=>{
     if(i>2500){
         body.style.overflowY = 'scroll';
         body.style.overflowX = 'hidden'; 
-        five.style.top = 0;
+        body.style.height = '100vh';
+        body.style.width = '100vw';
+        five.style.height = '100vh';
+        five.style.width = '100vw';
+        /* five.style.top = 0;
         five.style.left = 0;
-        five.style.transform = 'translate3d(0,0,0px)';
+         */
         removeEventListener();
     }
     
@@ -82,3 +88,14 @@ next.addEventListener('click', ()=>{
         n = 0;
     }
 }) 
+
+//easter egg
+
+prev.addEventListener('click', ()=>{
+    TweenLite.fromTo(easter, 8, {
+        left: '30vw',
+        display: 'block'
+    },{
+        left: '66vw'
+    });
+})
