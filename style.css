@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    color: white;
 }
 body{
     margin: 0;
@@ -83,12 +84,13 @@ body{
 /* Za waarudo: end */
 .one{
     position: absolute;
-    color: black;
+    color: white;
     font-family: sans-serif;
-    font-size: 4rem;
+    font-size: 2rem;
     top: 50vh;
     left: 50vw;
     transform: translate3d(-50%,-50%,2500px);
+    text-align: center;
 
 
 }
@@ -104,7 +106,7 @@ body{
 }
 .three{
     position: absolute;
-    color: black;
+    color: white;
     font-family: sans-serif;
     font-size: 4rem;
     top: 50vh;
@@ -126,7 +128,7 @@ body{
     width: 100vw;
     /* top: 50vh;
     left: 50vw; */
-    background:white; 
+    background:black; 
     transform: translate3d(0,0,0px);
 }
 
