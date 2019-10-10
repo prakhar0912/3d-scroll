@@ -6,7 +6,8 @@ const next = document.querySelector('.next');
 const prev = document.querySelector('.prev');
 const audio = document.querySelector('audio');
 const easter = document.querySelector('.egg');
-const button = document.querySelector('.three');
+const cool = document.querySelector('.three');
+const insert = document.querySelector('.insert');
 
 
 
@@ -106,10 +107,21 @@ prev.addEventListener('click', ()=>{
     });
 })
 
-//
-button.addEventListener('click',()=>{
-    body.removeEventListener("mousewheel",Scrolling);
-    console.log('okay');
-    body.style.overflowY = 'scroll';
-    body.style.overflowX = 'hidden'; 
+// I'm gonna die
+cool.addEventListener('click',()=>{
+    body.removeEventListener("mousewheel",Scrolling); 
+    insert.style.opacity = '1';
+    i = 0;
+    addEventListener('mousewheel',(e)=>{
+        console.log("okay")
+        if (e.wheelDelta<=0){     
+            i+=4;
+        }
+        else{          
+            i-=4;  
+        }
+        insert.style.transform = 'translate(-50%,'+i+'px)';
+    })
+    
 })
+
