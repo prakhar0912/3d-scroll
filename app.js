@@ -6,6 +6,8 @@ const next = document.querySelector('.next');
 const prev = document.querySelector('.prev');
 const audio = document.querySelector('audio');
 const easter = document.querySelector('.egg');
+const button = document.querySelector('.three');
+
 
 
 const arr = ['Space','Space <br> <br><span id="subtitle" style="font-size:0.3rem;font-style:italic; ">The New Frontier<span>','0&ay','ok☺️y','oka9'];
@@ -35,15 +37,18 @@ okay.addEventListener('mouseover',()=>{
             m = 0;
             clearInterval(a);
         }
-    },600);
+    },400);
     
 })
 
 // traversing z-axis
 i=0;
-addEventListener('mousewheel', (e)=>{
+body.addEventListener('mousewheel', Scrolling);
+function Scrolling(e) {
+    
     audio.play();
-    if(i>2500){
+    if(i>2550){
+    
         body.style.overflowY = 'scroll';
         body.style.overflowX = 'hidden'; 
         body.style.height = '100vh';
@@ -52,9 +57,11 @@ addEventListener('mousewheel', (e)=>{
         five.style.width = '100vw';
         /* five.style.top = 0;
         five.style.left = 0;
-         */
-        removeEventListener();
+            */
+        body.removeEventListener("mousewheel",Scrolling);
     }
+    
+    
     
     if (e.wheelDelta<=0){     
         i+=40;
@@ -65,10 +72,9 @@ addEventListener('mousewheel', (e)=>{
         
     }
     box.style.transform ='translateZ('+i+'px)';
-  
+    
     console.log(i)
-})
-
+}
 
 //prev and next
 n = 1;
@@ -98,4 +104,12 @@ prev.addEventListener('click', ()=>{
     },{
         left: '66vw'
     });
+})
+
+//
+button.addEventListener('click',()=>{
+    body.removeEventListener("mousewheel",Scrolling);
+    console.log('okay');
+    body.style.overflowY = 'scroll';
+    body.style.overflowX = 'hidden'; 
 })

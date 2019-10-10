@@ -102,6 +102,7 @@ body{
 
 
 }
+
 .egg{
     display: none;
     position: absolute;
@@ -124,7 +125,16 @@ body{
     left: 50vw;
     transform: translate3d(-50%,-50%,1100px);
 }
-
+.button{
+    position: absolute;
+    background: url('./img/Stars\ \(1\).png') no-repeat center center;
+    background-size: cover;
+    top: 50vh;
+    left: 50vw;
+    height: 100vh;
+    width: 100vw;
+    transform: translate3d(-50%,-50%,700px);
+}
 .four{
     position: absolute;
     top: 50vh;
@@ -134,13 +144,23 @@ body{
     transform: translate3d(-50%,-50%,500px) rotateY(-20deg) rotateX(40deg);
 
 }
-.five{
+.space2{
+    position: absolute;
+    background: url('./img/Stars\ \(1\).png') no-repeat center center;
+    background-size: cover;
+    top: 50vh;
+    left: 50vw;
+    height: 100vh;
+    width: 100vw;
+    transform: translate3d(-50%,-50%,1200px);
+}
+.background{
     position: absolute;
     height: 100vh;
     width: 100vw;
     /* top: 50vh;
     left: 50vw; */
-    background:black; 
+    background:black;
     transform: translate3d(0,0,0px);
 }
 
