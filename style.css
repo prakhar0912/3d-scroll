@@ -127,7 +127,7 @@ body{
 }
 .button{
     position: absolute;
-    background: url('./img/Stars\ \(1\).png') no-repeat center center;
+    background: url('./img/Stars\ \(2\).png') no-repeat center center;
     background-size: cover;
     top: 50vh;
     left: 50vw;
@@ -146,7 +146,7 @@ body{
 }
 .space2{
     position: absolute;
-    background: url('./img/Stars\ \(1\).png') no-repeat center center;
+    background: url('./img/Stars\ \(2\).png') no-repeat center center;
     background-size: cover;
     top: 50vh;
     left: 50vw;
