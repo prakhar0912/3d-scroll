@@ -170,7 +170,7 @@ body{
 
 .insert{
     position: absolute;
-    color: white;
+    color: black;
     font-family: sans-serif;
     font-size: 1rem;
     top:50vh;
@@ -180,5 +180,6 @@ body{
     /* width: 10vw; */
     /* overflow: visible; */
     z-index: 99999;
-    opacity: 0;
+    opacity: 1;
+    display: none;
 }

@@ -110,17 +110,18 @@ prev.addEventListener('click', ()=>{
 // I'm gonna die
 cool.addEventListener('click',()=>{
     body.removeEventListener("mousewheel",Scrolling); 
-    insert.style.opacity = '1';
-    i = 0;
+    insert.style.display = 'block';
+    insert.style.transform = 'translate3d(-50%,-70%,'+(i+100)+'px)';
+    r = 0;
     addEventListener('mousewheel',(e)=>{
         console.log("okay")
         if (e.wheelDelta<=0){     
-            i+=4;
+            r+=4;
         }
         else{          
-            i-=4;  
+            r-=4;  
         }
-        insert.style.transform = 'translate(-50%,'+i+'px)';
+        insert.style.transform = 'translate3d(-50%,'+r+'px,'+(i+100)+'px)';
     })
     
 })
